@@ -1,0 +1,88 @@
+<!-- pages/page3.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water-related Products and Conservation Awareness</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Water Consumer Survey</h1>
+        <nav>
+            <a href="page1.html">Demographics</a>
+            <a href="page2.html">Water Usage and Quality</a>
+            <a href="page3.html">Water Products & Awareness</a>
+            <a href="page4.html">Feedback and Contact info</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="water-products-section">
+            <h2>Water-related Products/Services</h2>
+            <form id="water-products-form">
+                <label for="use-filtration">Do you use any water filtration systems at home?</label>
+                <select id="use-filtration" name="use-filtration" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+
+                <label for="filtration-type">If yes, what type of water filtration system do you use?</label>
+                <input type="text" id="filtration-type" name="filtration-type">
+
+                <label for="water-saving-appliances">Are you aware of and have you used water-saving appliances or fixtures?</label>
+                <select id="water-saving-appliances" name="water-saving-appliances" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+
+                <button type="submit">Next</button>
+            </form>
+        </section>
+
+        <section class="bottled-water-section">
+            <h2>Bottled Water Preferences</h2>
+            <form id="bottled-water-form">
+                <label for="purchase-frequency">How often do you purchase bottled water?</label>
+                <select id="purchase-frequency" name="purchase-frequency" required>
+                    <option value="daily">Daily</option>
+                    <option value="weekly">Weekly</option>
+                    <option value="monthly">Monthly</option>
+                    <option value="rarely">Rarely</option>
+                    <option value="never">Never</option>
+                </select>
+
+                <label for="influence-factors">What factors influence your choice of bottled water brand?</label>
+                <input type="text" id="influence-factors" name="influence-factors">
+
+                <button type="submit">Next</button>
+            </form>
+        </section>
+
+        <section class="conservation-awareness-section">
+            <h2>Water Conservation Awareness</h2>
+            <form id="conservation-awareness-form">
+                <label for="awareness-level">How aware are you of water conservation issues in your area?</label>
+                <select id="awareness-level" name="awareness-level" required>
+                    <option value="very-aware">Very Aware</option>
+                    <option value="somewhat-aware">Somewhat Aware</option>
+                    <option value="not-very-aware">Not Very Aware</option>
+                    <option value="not-aware-at-all">Not Aware at All</option>
+                </select>
+
+                <label for="participation">Have you participated in any water conservation initiatives or campaigns?</label>
+                <select id="participation" name="participation" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+
+                <button type="submit">Submit Survey</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Water Consumer Survey</

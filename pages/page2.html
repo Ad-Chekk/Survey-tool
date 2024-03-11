@@ -1,0 +1,81 @@
+<!-- pages/page2.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Usage and Quality</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Water Consumer Survey</h1>
+        <nav>
+            <a href="page1.html">Demographics</a>
+            <a href="page2.html">Water Usage and Quality</a>
+            <a href="page3.html">Water Products & Awareness</a>
+            <a href="page4.html">Feedback and Contact info</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="water-usage-section">
+            <h2>Water Usage</h2>
+            <form id="water-usage-form">
+                <label for="water-source">How do you primarily source your water?</label>
+                <select id="water-source" name="water-source" required>
+                    <option value="municipal">Municipal Water Supply</option>
+                    <option value="well">Well Water</option>
+                    <option value="bottled">Bottled Water</option>
+                    <option value="other">Other (please specify)</option>
+                </select>
+
+                <label for="daily-consumption">On average, how many gallons of water does your household consume per day?</label>
+                <input type="number" id="daily-consumption" name="daily-consumption" required>
+
+                <label for="conservation-methods">Do you use any water conservation methods at home?</label>
+                <select id="conservation-methods" name="conservation-methods" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                    <option value="not-sure">Not Sure</option>
+                </select>
+
+                <button type="submit">Next</button>
+            </form>
+        </section>
+
+        <section class="water-quality-section">
+            <h2>Water Quality</h2>
+            <form id="water-quality-form">
+                <label for="satisfaction">How satisfied are you with the quality of your tap water?</label>
+                <select id="satisfaction" name="satisfaction" required>
+                    <option value="very-satisfied">Very Satisfied</option>
+                    <option value="satisfied">Satisfied</option>
+                    <option value="neutral">Neutral</option>
+                    <option value="dissatisfied">Dissatisfied</option>
+                    <option value="very-dissatisfied">Very Dissatisfied</option>
+                </select>
+
+                <label for="tested-contaminants">Have you ever tested your tap water for contaminants?</label>
+                <select id="tested-contaminants" name="tested-contaminants" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+
+                <label for="found-contaminants">If yes, what contaminants were found, if any?</label>
+                <input type="text" id="found-contaminants" name="found-contaminants">
+
+                <button type="submit">Next</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Water Consumer Survey</p>
+    </footer>
+
+    <script src="../scripts/main.js"></script>
+</body>
+</html>
